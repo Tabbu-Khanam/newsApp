@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>News App</title>
+  <link href="main.css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <div class="main-nav container flex" >
+      <a href="#" class="news" onclick="reload()">
+        <img src="image/news.jpg" alt="news.logo">
+        </a>
+        <div class="nav-link">
+          <ul class="flex">
+            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+             <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+             <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+          </ul>
+        </div>
+      <div class="search-bar">
+        <input type="text" class="news-input" placeholder="Science" id="news-input">
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+    </div>
+  </nav>
+  
+   <main>
+     <div class='cards-container container flex' id="cards-container">
+        </div>
+   </main>
+  <template id="template-news-card">
+       <div class="card">
+          <div class="card-header">
+             <img src="https://via.placeholder.com/400x200" id="news-img" alt="news image">
+          </div>
+            <div class="card-content">
+              <h3 id="news-title">This is the Title</h3>
+              <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+              <p class="news-desc" id="news-desc">When you have some text, how can you choose a typeface? Many people—professional designers included—go through an app’s font menu until we find one we like. But the aim of this Google Fonts Knowledge module is to show that there are many considerations that can improve our type choices. By setting some useful constraints to aid our type selection, we can also develop a critical eye for analyzing type along the way.
+
+</p>
+      
+            </div>
+          </div> 
+</template>
+  <script src="script.js"></script>
+
+  <!-- 
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+   <!--script src="https://replit.com/public/js/replit-badge-v2.js" the -->
+  <!-- <me="dark" position="bottom-right"></script> --> 
+</body>
+
+</html>
